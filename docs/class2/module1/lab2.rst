@@ -21,7 +21,7 @@ The **f5labs_explicit** topology does not perform user authentication by default
    :alt: Access Profile for NTLM Authentication
 
 
--  Click **Save & Next** at the bottom of the screen
+-  Click **Next** at the bottom of the screen
 
 |
 
