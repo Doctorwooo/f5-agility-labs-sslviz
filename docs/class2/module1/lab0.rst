@@ -19,8 +19,8 @@ Verify authentication is currently disabled
 
 .. important::
 
-   For this lab exercise, you will be using the **WINDOWS CLIENT** machine instead of the **Ubuntu18.04 Client** machine
-   that you used in the other lab exercises.
+   For this lab exercise, make sure you RDP into the **WINDOWS CLIENT** machine. This **WINDOWS CLIENT** machine is domain joined in order to test NTLM Authentication. The **Ubuntu18.04 Client** machine
+   will be used later in the lab.
 
 
 -  Start an RDP session to the **Windows Client** (*Systems > Windows Client > ACCESS > RDP*)
