@@ -5,7 +5,7 @@ Verify authentication is currently disabled
 ================================================================================
 
 .. attention::
-   A **Microsoft Remote Desktop Protocol (RDP) client** is required to connect to the *client* machines in this lab.
+   A **Microsoft Remote Desktop Protocol (RDP) client** is REQUIRED to connect to the *client* machines in this lab.
 
 -  Start a TMUI session on **SSL Orchestrator** and log in if prompted (*Components > SSL Orchestrator > ACCESS > TMUI*)
 
