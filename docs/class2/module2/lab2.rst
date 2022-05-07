@@ -1,10 +1,10 @@
 .. role:: red
 .. role:: bred
 
-Enable NTLM authentication on explicit proxy topology
+Modify Existing Topology
 ================================================================================
 
-The **f5labs_explicit** topology does not perform user authentication by default. You will now enable NTLM authentication for all users who connect to the explicit proxy.
+Modify the existing **f5labs_explicit** topology so that it uses a different IP address and listens on an empty VLAN. The current IP address will be re-assigned to the topology steering virtual server in a later step.
 
 -  From the Main menu on the left, select **SSL Orchestrator > Configuration**
 
@@ -14,16 +14,18 @@ The **f5labs_explicit** topology does not perform user authentication by default
 
    |topology-summary-IR-edit|
 
--  Select **/Common/f5labs-ntlm-ap** from the **Access Profile** drop down menu
+-  Change the **IPV4 Address** to ``10.1.10.151``.
 
+-  In the **VLANs** section, remove **client-vlan** from the **Selected** column.
 
-.. image:: ../images/ntlm-access-profile.png
-   :alt: Access Profile for NTLM Authentication
-
+-  Add **yyy-vlan** to the **Selected** column.
 
 -  Click **Save & Next** at the bottom of the screen
 
-|
+
+.. image:: ../images/intercept-new-ip-vlan.png
+   :alt: Proxy Server Settings - New IP and VLAN
+
 
 -  The **Egress Settings** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button (see example below).
 
