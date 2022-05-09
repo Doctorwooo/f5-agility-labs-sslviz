@@ -26,9 +26,15 @@ SSL Orchestrator does not pass authenticated usernames to a proxy service unless
 
 -  On SSL Orchestrator select **SSL Orchestrator > Configuration** from the Main menu on the left
 
+   |SSL-Orchestrator-Configuration|
+
 -  Click **Services** on the horizontal menu and then click on **ssloS_SquidProxy**. The Summary page will load for the Squid proxy service.
 
+   |SSL-Configuration-Services|
+
 -  Click the edit icon (|pencil|) to the right of **Service**
+
+   |SquidProxy-Service|
 
 -  Scroll down the Service Properties screen and select the **Authentication Offload** checkbox. Doing so will cause SSL Orchestrator to inject an "X-Authenticated-User" header into the HTTP payload of traffic it directs to the Squid proxy service.
 
@@ -66,3 +72,12 @@ SSL Orchestrator does not pass authenticated usernames to a proxy service unless
 
 .. |proxy-access-log-mike| image:: ../images/proxy-access-log-mike.png
    :alt: Proxy Access Log with Mike's Username
+
+.. |SSL-Orchestrator-Configuration| image:: ../images/SSL-Orchestrator-Configuration.png
+   :alt: SSL Orchestrator -> Configuration 
+
+.. |SSL-Configuration-Services| image:: ../images/SSL-Configuration-Services.png
+   :alt: SSL Configuration -> Services
+
+.. |SquidProxy-Service| image:: ../images/SquidProxy-Service.png
+   :alt: ssloS_SquidProxy - Services
