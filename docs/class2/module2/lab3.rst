@@ -59,9 +59,12 @@ This section allows you to add Online Certificate Status Protocol (OCSP) Respond
 ICAP service
 ---------------
 
--  On the **Services List** screen, click the **Add** button.
+-  On the **Services List** screen, click the **Add Service** button.
 
--  Type  ``icap`` in the **Search** box
+-  Click  **ICAP** under the **Service Settings** heading
+
+.. image:: ../images/ICAP-Heading.png
+   :align: left
 
 -  Select **Generic ICAP Service** and click the **Add** button
 
