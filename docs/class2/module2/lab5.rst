@@ -63,6 +63,8 @@ All of the traffic that doesn't match the application server conditions (i.e., s
 
 -  RDP to the **Windows Client** machine.
 
+      |credentials_link|
+
 -  Launch the **Chrome** web browser. Recall that the browser was configured to use **10.1.10.150:3128** as its Internet proxy. Since the new **Topology Director virtual server** is now listening on that address and on the **client-vlan** VLAN, it will accept the explicit proxy connections from the web browser and steer the traffic according to the logic defined in the iRule.
 
 -  Browse to a financial website (ex: Bank of America) and check the certificate that was received. The issuer should **NOT** be **subrsa.f5labs.com** since the **f5labs_explicit** topology bypasses TLS decryption for financial websites.
@@ -98,3 +100,7 @@ All of the traffic that doesn't match the application server conditions (i.e., s
 .. |credentials| raw:: html
 
       <a href="../labinfo.html#credentials" target="_blank"> User Credentials </a>
+
+.. |credentials_link| raw:: html
+
+      <a href="../labinfo.html#credentials" target="_blank"> Link to user credentials (opens in new browser tab) </a>
