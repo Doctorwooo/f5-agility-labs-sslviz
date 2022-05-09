@@ -45,9 +45,9 @@ SSL Orchestrator does not pass authenticated usernames to a proxy service unless
 
 -  Click the **Save & Next** button and confirm by clicking the **OK** button in the pop-up that appears.
 
-   |Service-Chain-Deploy|
-
 -  The **Service Chain List** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button.
+
+   |Service-Chain-Deploy|
 
 -  Click **OK** to acknowledge the successful deployment.
 
