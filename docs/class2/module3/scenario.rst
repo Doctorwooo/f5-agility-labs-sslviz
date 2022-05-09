@@ -20,8 +20,8 @@ Your organization has deployed SSL Orchestrator for internal users who access th
 Lab Overview
 ================================================================================
 
-You will start by leveraging a simple SQL-injection attack that demonstrates that the company's Juiceshop is indeed vulnerable and in need of protection afforded by **F5's Advanced Web Application Firewall**.
+You will start by leveraging a simple SQL-injection attack that demonstrates that the company's Juiceshop application is indeed vulnerable and in need of protection afforded by **F5's Advanced Web Application Firewall**.
 
-You will got through step-by-step on the procoess of creating a new **WAFaaS** device that will be used to protect the vulnerable Juiceshop application. Once the WAFaaS device is created, we will create a new inbound **Existing Application** topology with WAFaaS and enable the protection on the application.
+You will go through the step-by-step process of creating a new **WAFaaS** device that will be used to protect the vulnerable Juiceshop application. Once the WAFaaS device is created, we will create a new inbound **Existing Application** topology with WAFaaS and enable the protection on the application.
 
 Note: The WAF policy used in this lab is pre-configured. For more information hands-on with F5 WAF policy creation, please check out our comprehensive WAF labs on `Clouddocs <https://clouddocs.f5.com/training/community/waf/html/>`_.
