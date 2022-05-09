@@ -14,7 +14,7 @@ In this lab, you will learn how to leverage an Existing Application inbound topo
    It leverages a pre-configured Advanced WAF policy to protect the vulnerable web application.
 
    This lab features the OWASP Juice Shop; a modern and sophisticated insecure web application designed to demonstrate common security vulerabilies that can easily be exploited by anyone on the internet that can access your application. 
-
+   `OWASP Juice Shop <https://owasp.org/www-project-juice-shop/>`_.
 
 .. toctree::
    :maxdepth: 1
