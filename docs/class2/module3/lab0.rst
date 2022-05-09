@@ -24,6 +24,16 @@ We will start by establishing an RDP session to the **Ubuntu 18.04 Client**.
 
    .. image:: ../images/juiceshop-bookmark.png
 
+-  Accept the security risk by clicking **Advanced** and **Accept the Risk and Continue**. This is due to the BIGIP using a self-signed certificate.
+
+   .. image:: ../images/certificate-risk.png
+
+Here is the vulnerable Juiceshop application. Next, we will try a simple SQL injection attack that will illustrate why WAF protection is necessary.
+
+  .. image:: ../images/juiceshop-rdp.png
+
+
+
 
 
 
