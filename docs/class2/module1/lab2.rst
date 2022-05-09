@@ -8,6 +8,8 @@ The **f5labs_explicit** topology does not perform user authentication by default
 
 -  From the Main menu on the left, select **SSL Orchestrator > Configuration**
 
+   |SSL-Orchestrator-Configuration|
+
 -  In the Topology list click on **sslo_f5labs_explicit**. The topology summary screen will appear.
 
 -  Click the edit icon (|pencil|) to the right of **Interception Rule**
@@ -38,6 +40,9 @@ The **f5labs_explicit** topology does not perform user authentication by default
    :width: 20px
    :height: 20px
    :alt: Pencil Icon
+
+.. |SSL-Orchestrator-Configuration| image:: ../images/SSL-Orchestrator-Configuration.png
+   :alt: SSL Orchestrator -> Configuration 
 
 .. |egress-settings-deploy-ribbon| image:: ../images/egress-settings-deploy-ribbon.png
    :alt: Deploy Ribbon on Egress Settings
