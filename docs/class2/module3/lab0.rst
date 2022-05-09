@@ -1,8 +1,35 @@
 .. role:: red
 .. role:: bred
 
-Verify Pre-requisite SSL Orchestrator Configuration
+The Juiceshop Application
 ================================================================================
+
+We will start by establishing an RDP session to the **Ubuntu 18.04 Client**.
+
+-  Start an RDP session to the **Ubuntu 18.04 CLient** (Components > Ubuntu18.04 Client > ACCESS > XRDP)
+
+   .. image:: ../images/udf-ubuntu-client-rdp.png
+      :alt: UDF Ubuntu Client RDP 
+
+-  When prompted, save the RDP file to your local machine and then open it to connect.
+-  At the Ubuntu Login prompt, click on the **OK** button to continue.
+
+   .. image:: ../images/udf-ubuntu-client-rdp2.png
+      :alt: UDF Ubuntu XRDP
+
+   .. tip:: If the RDP session times out, refer to the `User Credentials <https://github.com/Doctorwooo/f5-agility-labs-sslviz/blob/master/docs/class2/labinfo.rst>`_ for the **student** user password.
+
+-  Open the **Firefox** browser
+-  Click on the **Juiceshop** bookmark on the browser bar
+
+   .. image:: ../images/juiceshop-bookmark.png
+
+
+
+
+-   
+
+
 
 -  If not already connected to the **SSL Orchestrator** TMUI, log into the TMUI *(Components > SSL Orchestrator > ACCESS > TMUI)*
 
