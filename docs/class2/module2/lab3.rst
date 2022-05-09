@@ -47,6 +47,14 @@ SSL Configurations
 
 -  Click the **Save & Next** button to continue.
 
+Authentication List
+--------------------
+
+This section allows you to add Online Certificate Status Protocol (OCSP) Responders validate the revocation status of a digital certificate. Since we are not using certificate-based authentication in this lab, we will skip this section and click **Save & Next** at the bottom of the page.
+
+.. image:: ../images/Authentication-List.png
+   :align: left
+
 
 ICAP service
 ---------------
