@@ -45,6 +45,8 @@ SSL Orchestrator does not pass authenticated usernames to a proxy service unless
 
 -  Click the **Save & Next** button and confirm by clicking the **OK** button in the pop-up that appears.
 
+   |Service-Chain-Deploy|
+
 -  The **Service Chain List** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button.
 
 -  Click **OK** to acknowledge the successful deployment.
@@ -81,3 +83,6 @@ SSL Orchestrator does not pass authenticated usernames to a proxy service unless
 
 .. |SquidProxy-Service| image:: ../images/SquidProxy-Service.png
    :alt: ssloS_SquidProxy - Services
+
+.. |Service-Chain-Deploy| image:: ../images/Service-Chain-Deploy.png
+   :alt: Service Chain Deploy
