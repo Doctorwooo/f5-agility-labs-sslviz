@@ -9,7 +9,7 @@ Enable and test authentication offload
    .. image:: ../images/udf-ubuntu-services-webshell.png
       :alt: Unbuntu Services Web Shell Access
 
--  Enter the following commands in the Web Shell - **NOTE** You will need to type these commands into the **Web Shell** as it lacks copy-and-paste capabilities.:
+-  Enter the following commands in the Web Shell - **NOTE** You will need to type these commands into the **Web Shell** as it lacks copy-and-paste capabilities:
 
    .. code:: bash
 
