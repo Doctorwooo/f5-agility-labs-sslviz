@@ -8,7 +8,7 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 - Navigate to **Network > VLANs** and click on the **Create** button to add a new VLAN.
 
-- Name this VLAN:  ``zzz-vlan`` and then click on **Finished**. Do not select any interfaces.
+- Name this VLAN:  ``zzz-vlan`` and then click on **Repeat**. Do not select any interfaces.
 
    .. image:: ../images/create-vlan.png
       :alt: Empty VLAN
@@ -20,7 +20,7 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 -  Click on **OK** to continue and return to the VLAN List.
 
-- Click on the **Create** button again to add a second empty VLAN.
+- By clicking **Repeat**, we are automatically ready to create the second empty VLAN.
 
 - Name this VLAN:  ``yyy-vlan`` and then click on **Finished**.
 
