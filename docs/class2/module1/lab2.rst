@@ -25,8 +25,6 @@ The **f5labs_explicit** topology does not perform user authentication by default
 
 -  Click **Save & Next** at the bottom of the screen
 
-|
-
 -  The **Egress Settings** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button (see example below).
 
    |egress-settings-deploy-ribbon|
