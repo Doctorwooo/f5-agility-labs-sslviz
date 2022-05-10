@@ -65,7 +65,7 @@ The topology steering iRule contains your steering logic and defines the topolog
    -  **Destination Address:** Enter ``10.1.10.150``
    -  **Destination Port:** Enter ``3128``
    -  **Protocol:** Leave the default - **TCP**
-   -  **HTTP Profile (Client):** Select **sslo-default-http-explicit**
+   -  **HTTP Profile (Client):** Select **http-explicit-sslo**
    -  **VLAN and Tunnel Traffic:** Select **Enabled On...** and then move **client-vlan** to the **Selected** column.
    -  **Address Translation:** Uncheck to disable
    -  **Port Translation:** Uncheck to disable
