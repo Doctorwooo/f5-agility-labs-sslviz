@@ -17,6 +17,7 @@ We will start by establishing an RDP session to the **Ubuntu 18.04 Client**.
    .. image:: ../images/udf-ubuntu-client-rdp2.png
       :alt: UDF Ubuntu XRDP
 
+
    .. tip:: If the RDP session times out, refer to the `User Credentials <https://github.com/Doctorwooo/f5-agility-labs-sslviz/blob/master/docs/class2/labinfo.rst>`_ for the **student** user password.
 
 -  Open the **Firefox** browser
@@ -31,6 +32,10 @@ We will start by establishing an RDP session to the **Ubuntu 18.04 Client**.
 Here is the vulnerable Juiceshop application. Next, we will try a simple SQL injection attack that will illustrate why WAF protection is necessary.
 
   .. image:: ../images/juiceshop-rdp.png
+
+-  Paste the following path in your browser's location bar after https://10.1.20.200/
+
+  
 
 
 
