@@ -1,9 +1,14 @@
 .. role:: red
 .. role:: bred
 
-Create Two Empty VLANs
+================================================================================
+Create WAFaaS Security Device
 ================================================================================
 
+Introduction
+********************************************************************************
+
+WAFaaS 
 A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
 - Navigate to **Network > VLANs** and click on the **Create** button to add a new VLAN.
