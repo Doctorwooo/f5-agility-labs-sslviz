@@ -9,7 +9,7 @@ This next section of this lab will cover how to create a WAFaaS device. We will 
 Create the ICAP service
 ********************************************************************************
 
-1. Login to the BIGIP via TMUI |credentials|
+#. Login to the BIGIP via TMUI |credentials|
 
 |udf-sslo-tmui|
 
