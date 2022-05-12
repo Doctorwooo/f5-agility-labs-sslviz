@@ -66,6 +66,9 @@ Create the ICAP service
 .. |service-icap-save| image:: ../images/service-icap-save.png
    :alt: ICAP service save
 
+.. |service-chain-01| image:: ../images/service-chain-01.png
+   :alt: Create Service Chain
+
 .. image:: ../images/vlan-empty.png
    :alt: Empty VLANs
 
