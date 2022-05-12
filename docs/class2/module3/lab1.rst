@@ -17,6 +17,17 @@ Create the ICAP service
 
 |menu-sslo-config|
 
+3. Click on **Services** on the middle menu bar and then click **Add** to add new service.
+
+|sslo-gc-services|
+
+4. Click **ICAP**, select **Generic ICAP Service**, and then click **Add** from below.
+
+|service-icap-1|
+
+5. 
+
+
 
 A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
@@ -45,6 +56,12 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 .. |menu-sslo-config| image:: ../images/menu-sslo-config.png
    :alt: SSL Orchestrator Configuration Menu
+
+.. |sslo-gc-services| image:: ../images/sslo-gc-services.png
+   :alt: SSLO GC Services
+
+.. |service-icap-1| image:: ../images/service-icap-1.png
+   :alt: ICAP service
 
 .. image:: ../images/vlan-empty.png
    :alt: Empty VLANs
