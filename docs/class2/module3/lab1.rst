@@ -70,7 +70,16 @@ Disable TCP monitor on the ICAP Pool
 Remove ICAP Adapt profiles 
 ********************************************************************************
 
-14. Click 
+14. Click **Local Traffic>>Virtual Server List** and select the **ssloS_WAFaaS-t-4** virtual server. **MAKE SURE** you select the ICAP service with **t-4** next to it.
+
+|ssloS_WAFaaS-t-4|
+
+15. Scroll about half-way down the page and change both **Request Adapt Profile** and **Response Adapt Profile** to **None**. Click **Update** at the bottom once you have removed the **adapt profiles** from the virtual server.
+
+|adapt-profiles|
+
+
+
 
 
 
@@ -118,6 +127,12 @@ Remove ICAP Adapt profiles
 
 .. |WAFaaS-Pool-tcp| image:: ../images/WAFaaS-Pool-tcp.png
    :alt: Remove TCP profile from WAFaaS pool
+
+.. |ssloS_WAFaaS-t-4| image:: ../images/ssloS_WAFaaS-t-4.png
+   :alt: Select the ssloS_WAFaaS-t-4 virtual server
+
+.. |adapt-profiles| image:: ../images/adapt-profiles.png
+   :alt: remove adapt-profiles from the virtual server
 
 .. |credentials| raw:: html
       <a href="../labinfo.html#credentials" target="_blank"> User Credentials </a>   
