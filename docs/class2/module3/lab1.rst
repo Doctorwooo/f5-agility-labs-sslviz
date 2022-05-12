@@ -37,6 +37,9 @@ Create the ICAP service
 
 |service-icap-save|
 
+Create the new service chain
+********************************************************************************
+
 8. Next we need to create a new service chain where our new WAFaaS ICAP service will be placed. Click **Add** under the **Services Chain List** to add a new service chain.
 
 |service-chain-01|
@@ -50,6 +53,26 @@ Create the ICAP service
 |service-chain-03|
 
 |service-chain-04|
+
+11. Click **OK** to acknowledge the successful deployment message.
+
+Disable TCP monitor on the ICAP Pool
+********************************************************************************
+
+12. Click **Local Traffic>>Pools>>Pool List** on the left side menu bar. Click on the **ssloS_WAFaaS** pool.
+
+|pool-list| 
+
+13. Select **tcp** next to **Health Monitors** and click the **Right Arrow** to de-select it from the pool. Click **Update** down below to make adjustment.
+
+|WAFaaS-Pool-tcp|
+
+Remove ICAP Adapt profiles 
+********************************************************************************
+
+14. Click 
+
+
 
 
 
@@ -90,6 +113,11 @@ Create the ICAP service
 .. |service-chain-04| image:: ../images/service-chain-04.png
    :alt: Deploy Service Chain
 
+.. |pool-list| image:: ../images/pool-list.png
+   :alt: Select Pool List
+
+.. |WAFaaS-Pool-tcp| image:: ../images/WAFaaS-Pool-tcp.png
+   :alt: Remove TCP profile from WAFaaS pool
 
 .. |credentials| raw:: html
       <a href="../labinfo.html#credentials" target="_blank"> User Credentials </a>   
