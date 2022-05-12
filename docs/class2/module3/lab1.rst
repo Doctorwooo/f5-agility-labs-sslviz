@@ -13,6 +13,10 @@ Create the ICAP service
 
 |udf-sslo-tmui|
 
+#. Click on **SSL Orchestrator** on the left-hand menu and select **Configuration**.
+
+|menu-sslo-config|
+
 
 A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
@@ -38,6 +42,9 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 .. |udf-sslo-tmui| image:: ../images/udf-sslo-tmui.png
    :alt: SSL Orchestrator TMUI Access
+
+.. |menu-sslo-config| image:: ../images/menu-sslo-config.png
+   :alt: SSL Orchestrator Configuration Menu
 
 .. image:: ../images/vlan-empty.png
    :alt: Empty VLANs
