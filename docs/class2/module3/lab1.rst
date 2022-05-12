@@ -78,7 +78,18 @@ Remove ICAP Adapt profiles
 
 |adapt-profiles|
 
+Adjust WAFaaS service profile
+********************************************************************************
 
+16. CLick **Local Traffic>>Profiles>>Other>>Service** and click on the service profile **ssloS_WAFaaS-service** link.
+
+|select-WAFaaS-service|
+
+17. Change the **Settings>Type** to **F5 Module** and then click **Update**.
+
+|ssloS_WAFaaS-service-type|
+
+You have successfully create the WAFaaS ICAP device. Next, we will create a new L3 inbound Existing Application topology that will utilize our new WAFaaS service device.
 
 
 
@@ -132,6 +143,9 @@ Remove ICAP Adapt profiles
    :alt: Select the ssloS_WAFaaS-t-4 virtual server
 
 .. |adapt-profiles| image:: ../images/adapt-profiles.png
+   :alt: remove adapt-profiles from the virtual server
+
+.. |select-WAFaaS-service| image:: ../images/select-WAFaaS-service.png
    :alt: remove adapt-profiles from the virtual server
 
 .. |credentials| raw:: html
