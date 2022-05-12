@@ -20,6 +20,8 @@ Your organization has deployed SSL Orchestrator for internal users who access th
 Lab Overview
 ================================================================================
 
+Customers have multiple options to support inbound reverse proxy use cases to provide protection to applications. Wouldn't it be nice to also be able to easily provide F5 WAF protection to these applications as well? SSL Orchestrator can be configured to provide this funcionality allowing administrators to deploy WAFaaS in a service chain supporting a L3 inbound topology. 
+
 You will start by leveraging a simple SQL-injection attack that demonstrates that the company's Juiceshop application is indeed vulnerable and in need of protection afforded by **F5's Advanced Web Application Firewall**.
 
 You will go through the step-by-step process of creating a new **WAFaaS** device that will be used to protect the vulnerable Juiceshop application. Once the WAFaaS device is created, we will create a new inbound **Existing Application** topology with WAFaaS and enable the protection on the application.
