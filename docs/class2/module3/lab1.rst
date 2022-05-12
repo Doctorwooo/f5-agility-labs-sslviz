@@ -155,6 +155,9 @@ You have successfully create the WAFaaS ICAP device. Next, we will create a new 
 .. |ssloS_WAFaaS-t-4| image:: ../images/ssloS_WAFaaS-t-4.png
    :alt: Select the ssloS_WAFaaS-t-4 virtual server
 
+.. |select-WAFaaS-service| image:: ../images/select-WAFaaS-service.png
+   :alt: Select the ssloS_WAFaaS-t-4 service   
+
 .. |adapt-profiles| image:: ../images/adapt-profiles.png
    :alt: remove adapt-profiles from the virtual server
 
@@ -164,10 +167,10 @@ You have successfully create the WAFaaS ICAP device. Next, we will create a new 
 .. |select-WAFaaS-service| image:: ../images/select-WAFaaS-service.png
    :alt: remove adapt-profiles from the ssloS_WAFaaS-t-4 virtual server
 
-   |ssloS_WAFaaS-t-4-security| image:: ../images/ssloS_WAFaaS-t-4-security.png
+.. |ssloS_WAFaaS-t-4-security| image:: ../images/ssloS_WAFaaS-t-4-security.png
    :alt: Select Security for Virtual Server
 
-   |ssloS_WAFaaS-t-4-security-change| image:: ../images/ssloS_WAFaaS-t-4-security-change.png
+.. |ssloS_WAFaaS-t-4-security-change| image:: ../images/ssloS_WAFaaS-t-4-security-change.png
    :alt: Add Policy and logging profile to ssloS_WAFaaS-t-4 virtual server
 
 .. |credentials| raw:: html
