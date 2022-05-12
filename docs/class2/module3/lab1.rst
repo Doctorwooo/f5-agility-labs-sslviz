@@ -9,11 +9,11 @@ This next section of this lab will cover how to create a WAFaaS device. We will 
 Create the ICAP service
 ********************************************************************************
 
-#. Login to the BIGIP via TMUI |credentials|
+1. Login to the BIGIP via TMUI |credentials|
 
 |udf-sslo-tmui|
 
-#. Click on **SSL Orchestrator** on the left-hand menu and select **Configuration**.
+2. Click on **SSL Orchestrator** on the left-hand menu and select **Configuration**.
 
 |menu-sslo-config|
 
