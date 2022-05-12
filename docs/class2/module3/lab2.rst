@@ -1,40 +1,39 @@
 .. role:: red
 .. role:: bred
 
-Modify Existing Topology
+Create Existing Application L3 Inbound Topology
 ================================================================================
 
-Modify the existing **f5labs_explicit** topology so that it uses a different IP address and listens on an empty VLAN. The current IP address will be re-assigned to the topology steering virtual server in a later step.
+Now that we have our WAFaaS device and security chain created, we will now create an **Existing Application** topology that will be used to protect our vulnerable **Juiceshop** application.
 
--  From the Main menu on the left, select **SSL Orchestrator > Configuration**
+1. Click on **SSL Orchestrator** and select **Configuration**
 
--  In the Topology list click on **sslo_f5labs_explicit**. The topology summary screen will appear.
+|SSL-Orchestrator-Configuration|
 
--  Click the edit icon (|pencil|) to the right of **Interception Rule**
+2. Click **Add** under the **Topologies** menu item.
 
-   |topology-summary-IR-edit|
+|add-topologies|
 
--  Change the **IPV4 Address** to ``10.1.10.151``.
+3. Click **Next** through the Topology Information page.
 
--  In the **VLANs** section, remove **client-vlan** from the **Selected** column.
+4. Next to **Name**,  ``WAFaaS_inbound``. Select **Existing Application** under **SSL Orchestrator Topologies**. CLick **Save & Next** once complete.
 
--  Add **yyy-vlan** to the **Selected** column.
+|Topology-Properties|
 
--  Click **Save & Next** at the bottom of the screen
-
-
-.. image:: ../images/intercept-new-ip-vlan.png
-   :alt: Proxy Server Settings - New IP and VLAN
+5. Test
 
 
--  The **Egress Settings** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button (see example below).
 
-   |egress-settings-deploy-ribbon|
 
--  Click **OK** to acknowledge the successful deployment.
 
-.. |topology-summary-IR-edit| image:: ../images/topology-summary-IR-edit.png
-   :alt: Edit Interception Rule from Topology Summary
+.. |add-topologies| image:: ../images/add-topologies.png
+   :alt: Under topologies, Click Add
+
+.. |SSL-Orchestrator-Configuration| image:: ../images/SSL-Orchestrator-Configuration.png
+   :alt: Go to SSL Orchestrator -> Configuration
+
+.. |Topology-Properties| image:: ../images/Topology-Properties.png
+   :alt: Adding Existing Application topology
 
 .. |pencil| image:: ../images/pencil.png
    :width: 20px
