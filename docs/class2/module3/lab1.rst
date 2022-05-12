@@ -45,6 +45,13 @@ Create the ICAP service
 
 |service-chain-02|
 
+10. Click **Save & Next** and the **Deploy** on the **Summary** page,
+
+|service-chain-03|
+
+|service-chain-04|
+
+
 
 
 
@@ -76,6 +83,12 @@ Create the ICAP service
 
 .. |service-chain-02| image:: ../images/service-chain-02.png
    :alt: Save Service Chain
+
+.. |service-chain-03| image:: ../images/service-chain-03.png
+   :alt: Save Service Chain
+
+.. |service-chain-04| image:: ../images/service-chain-04.png
+   :alt: Deploy Service Chain
 
 
 .. |credentials| raw:: html
