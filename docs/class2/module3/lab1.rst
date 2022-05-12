@@ -9,7 +9,11 @@ This next section of this lab will cover how to create a WAFaaS device. We will 
 Create the ICAP service
 ********************************************************************************
 
-1. Login to the BIGIP via TMUI
+1. Login to the BIGIP via TMUI |credentials|
+
+|udf-sslo-tmui|
+
+
 A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
 - Navigate to **Network > VLANs** and click on the **Create** button to add a new VLAN.
@@ -32,7 +36,13 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 - Since you are not attaching any interfaces to this VLAN, you will receive a confirmation pop-up. Click on **OK** to continue and return to the VLAN List.
 
-|
+.. |udf-sslo-tmui| image:: ../images/udf-sslo-tmui.png
+   :alt: SSL Orchestrator TMUI Access
 
 .. image:: ../images/vlan-empty.png
    :alt: Empty VLANs
+
+
+
+.. |credentials| raw:: html
+      <a href="../labinfo.html#credentials" target="_blank"> User Credentials </a>   
