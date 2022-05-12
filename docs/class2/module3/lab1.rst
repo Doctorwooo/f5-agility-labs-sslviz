@@ -1,14 +1,15 @@
 .. role:: red
 .. role:: bred
 
-================================================================================
 Create WAFaaS Security Device
 ================================================================================
 
-Introduction
+This next section of this lab will cover how to create a WAFaaS device. We will also attach a preconfigured WAF policy that will provide protection against attacks such as SQL-Injection and other OWASP Top 10 type vulnerabilities. 
+
+Create the ICAP service
 ********************************************************************************
 
-WAFaaS 
+#. Login to the BIGIP via TMUI
 A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
 - Navigate to **Network > VLANs** and click on the **Create** button to add a new VLAN.
