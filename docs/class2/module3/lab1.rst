@@ -41,6 +41,11 @@ Create the ICAP service
 
 |service-chain-01|
 
+9. Type ``WAFaaS`` as the **Name**, Select **ssloS_WAFaaS** and click **Right Arrow**, and then click **Save** at the bottom of the screen.
+
+|service-chain-02|
+
+
 
 
 
@@ -69,9 +74,8 @@ Create the ICAP service
 .. |service-chain-01| image:: ../images/service-chain-01.png
    :alt: Create Service Chain
 
-.. image:: ../images/vlan-empty.png
-   :alt: Empty VLANs
-
+.. |service-chain-02| image:: ../images/service-chain-02.png
+   :alt: Save Service Chain
 
 
 .. |credentials| raw:: html
