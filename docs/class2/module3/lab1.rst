@@ -78,14 +78,27 @@ Remove ICAP Adapt profiles
 
 |adapt-profiles|
 
+Add WAF Policy to WAFaaS Virtual Server
+********************************************************************************
+
+16. While still viewing the properties for the **ssloS_WAFaaS-t-4** virtual server, click on the **Security** menu item.
+
+|ssloS_WAFaaS-t-4-security|
+
+17. Change the **Application Security Policy** to **Enabled** and select the pre-configured **WAFaaS_policy** WAF policy.
+
+18. Change **Log Profile** to **Enabled** and select **Log illegal requests**.  Click **Update** when complete.
+
+|ssloS_WAFaaS-t-4-security-change|
+
 Adjust WAFaaS service profile
 ********************************************************************************
 
-16. CLick **Local Traffic>>Profiles>>Other>>Service** and click on the service profile **ssloS_WAFaaS-service** link.
+1.   CLick **Local Traffic>>Profiles>>Other>>Service** and click on the service profile **ssloS_WAFaaS-service** link.
 
 |select-WAFaaS-service|
 
-17. Change the **Settings>Type** to **F5 Module** and then click **Update**.
+1.  Change the **Settings>Type** to **F5 Module** and then click **Update**.
 
 |ssloS_WAFaaS-service-type|
 
