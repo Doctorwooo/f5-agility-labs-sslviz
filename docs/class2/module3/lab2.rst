@@ -80,6 +80,9 @@ Congratulations! You have now successfully deployed WAFaaS for an existing appli
 .. |service-chain-save| image:: ../images/service-chain-save.png
    :alt: Service Chain Save & Next
 
+.. |security-policy-pencil| image:: ../images/security-policy-pencil.png
+   :alt: Make changes to All Traffic rule
+
 .. |security-policy-service-chain| image:: ../images/security-policy-service-chain.png
    :alt: Security Policy > Service Chain Save & Next
 
@@ -94,3 +97,6 @@ Congratulations! You have now successfully deployed WAFaaS for an existing appli
 
 .. |juiceshop-vs-01| image:: ../images/juiceshop-vs-01.png
    :alt: Juiceshop Virtual Server
+
+.. |virtual-server-access-policy| image:: ../images/virtual-server-access-policy.png
+   :alt: Completed topology deployment
