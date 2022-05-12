@@ -25,31 +25,25 @@ Create the ICAP service
 
 |service-icap-1|
 
-5. 
+5. Type **WAFaaS** as the **Name**. Click **Add** next to **ICAP Devices**.
+
+|service-icap-2|
+
+6. Type ``192.19.97.200`` for the **IP Address** and then click **Done**.
+
+|service-icap-ip|
+
+7. Scroll to the bottom of the page and click **Save & Next** to finish creating the **ICAP Service**.
+
+|service-icap-save|
+
+8. Next we need to create a new service chain where our new WAFaaS ICAP service will be placed. Click **Add** under the **Services Chain List** to add a new service chain.
+
+|service-chain-01|
 
 
 
-A topology must be bound to a unique VLAN. Since the layer topologies won't be listening on actual client-facing VLANs, you will need to create a separate empty VLAN for each topology you intend to create. An empty VLAN has no interfaces assigned.
 
-- Navigate to **Network > VLANs** and click on the **Create** button to add a new VLAN.
-
-- Name this VLAN:  ``zzz-vlan`` and then click on **Finished**. Do not select any interfaces.
-
-   .. image:: ../images/create-vlan.png
-      :alt: Empty VLAN
-
-- Since you are not attaching any interfaces to this VLAN, you will receive a confirmation pop-up.
-
-   .. image:: ../images/vlan-confirm-empty.png
-      :alt: Empty VLAN Confirmation
-
--  Click on **OK** to continue and return to the VLAN List.
-
-- Click on the **Create** button again to add a second empty VLAN.
-
-- Name this VLAN:  ``yyy-vlan`` and then click on **Finished**.
-
-- Since you are not attaching any interfaces to this VLAN, you will receive a confirmation pop-up. Click on **OK** to continue and return to the VLAN List.
 
 .. |udf-sslo-tmui| image:: ../images/udf-sslo-tmui.png
    :alt: SSL Orchestrator TMUI Access
@@ -62,6 +56,15 @@ A topology must be bound to a unique VLAN. Since the layer topologies won't be l
 
 .. |service-icap-1| image:: ../images/service-icap-1.png
    :alt: ICAP service
+
+.. |service-icap-2| image:: ../images/service-icap-2.png
+   :alt: ICAP service add
+
+.. |service-icap-ip| image:: ../images/service-icap-ip.png
+   :alt: ICAP service ip
+
+.. |service-icap-save| image:: ../images/service-icap-save.png
+   :alt: ICAP service save
 
 .. image:: ../images/vlan-empty.png
    :alt: Empty VLANs
