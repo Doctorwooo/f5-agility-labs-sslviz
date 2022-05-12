@@ -145,6 +145,9 @@ You have successfully create the WAFaaS ICAP device. Next, we will create a new 
 .. |adapt-profiles| image:: ../images/adapt-profiles.png
    :alt: remove adapt-profiles from the virtual server
 
+.. |ssloS_WAFaaS-service-type| image:: ../images/ssloS_WAFaaS-service-type.png
+   :alt: Changed the type to F5 Module
+
 .. |select-WAFaaS-service| image:: ../images/select-WAFaaS-service.png
    :alt: remove adapt-profiles from the virtual server
 
