@@ -4,19 +4,19 @@
 Enable and test authentication offload
 ================================================================================
 
--  Start a Web Shell to **Ubuntu18.04 Services** (**Systems > Ubuntu18.04 Services > ACCESS > Web Shell**). **MAKE SURE** you are accessing **Ubuntu18.04 Services** and not the **Ubuntu18.04 Client**.
+1.  Start a Web Shell to **Ubuntu18.04 Services** (**Systems > Ubuntu18.04 Services > ACCESS > Web Shell**). **MAKE SURE** you are accessing **Ubuntu18.04 Services** and not the **Ubuntu18.04 Client**.
 
    .. image:: ../images/udf-ubuntu-services-webshell.png
       :alt: Unbuntu Services Web Shell Access
 
--  Enter the following commands in the Web Shell - **NOTE** You will need to type these commands into the **Web Shell** as it lacks copy-and-paste capabilities:
+2.  Enter the following commands in the Web Shell - **NOTE** You will need to type these commands into the **Web Shell** as it lacks copy-and-paste capabilities:
 
    .. code:: bash
 
       clear
       tail -f -n 0 /var/log/squid/access.log
 
--  Visit a few secure (HTTPS) websites (non-banking) using Chrome on the Windows Client and confirm that access is still being logged. You should see log entries of the sites and URLs visited but the username field (immediately after the URI) will be blank ("-"), similar to the example below:
+3.  Visit a few secure (HTTPS) websites (non-banking) using Chrome on the Windows Client and confirm that access is still being logged. You should see log entries of the sites and URLs visited but the username field (immediately after the URI) will be blank ("-"), similar to the example below:
 
    |proxy-access-log-nouser|
 
@@ -24,39 +24,39 @@ Enable and test authentication offload
 
 SSL Orchestrator does not pass authenticated usernames to a proxy service unless explicitly configured to do so. In the next step you will enable this feature.
 
--  On SSL Orchestrator select **SSL Orchestrator > Configuration** from the Main menu on the left
+4.  On SSL Orchestrator select **SSL Orchestrator > Configuration** from the Main menu on the left
 
    |SSL-Orchestrator-Configuration|
 
--  Click **Services** on the horizontal menu and then click on **ssloS_SquidProxy**. The Summary page will load for the Squid proxy service.
+5.  Click **Services** on the horizontal menu and then click on **ssloS_SquidProxy**. The Summary page will load for the Squid proxy service.
 
    |SSL-Configuration-Services|
 
--  Click the edit icon (|pencil|) to the right of **Service**
+6.  Click the edit icon (|pencil|) to the right of **Service**
 
    |SquidProxy-Service|
 
--  Scroll down the Service Properties screen and select the **Authentication Offload** checkbox. Doing so will cause SSL Orchestrator to inject an "X-Authenticated-User" header into the HTTP payload of traffic it directs to the Squid proxy service.
+7.  Scroll down the Service Properties screen and select the **Authentication Offload** checkbox. Doing so will cause SSL Orchestrator to inject an "X-Authenticated-User" header into the HTTP payload of traffic it directs to the Squid proxy service.
 
 
 .. image:: ../images/auth-offload.png
    :alt: Authentication Offload Option
 
 
--  Click the **Save & Next** button and confirm by clicking the **OK** button in the pop-up that appears.
+8.  Click the **Save & Next** button and confirm by clicking the **OK** button in the pop-up that appears.
 
--  The **Service Chain List** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button.
+9.  The **Service Chain List** screen will load. Wait a moment for the yellow "Deploy" ribbon to appear. When it does, click the **Deploy** button.
 
    |Service-Chain-Deploy|
 
--  Click **OK** to acknowledge the successful deployment.
+10.  Click **OK** to acknowledge the successful deployment.
 
--  Visit a few more secure (HTTPS) websites (non-banking) using Chrome on the Windows Client. You should now see your username logged along with the HTTP requests you sent, similar to the example below:
+11.  Visit a few more secure (HTTPS) websites (non-banking) using Chrome on the Windows Client. You should now see your username logged along with the HTTP requests you sent, similar to the example below:
 
    |proxy-access-log-mike|
 
 
--  Press ``<CTRL+C>`` to stop the **tail** tool.
+12.  Press ``<CTRL+C>`` to stop the **tail** tool.
 
 
 .. attention::

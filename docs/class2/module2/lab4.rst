@@ -7,17 +7,17 @@ Layered Virtual Server and Topology Steering iRule
 .. note::
    The **SSLOLIBEXP** and **sslo-layering-exp-rule** files from the `f5devcentral/sslo-script-tools <https://github.com/f5devcentral/sslo-script-tools/tree/main/internal-layered-architecture>`_ Github repository have already been imported for you. You will review the contents of these iRules shortly.
 
--  Navigate to  **Local Traffic > iRules > Datagroup List** to view the data groups.
+1.  Navigate to  **Local Traffic > iRules > Datagroup List** to view the data groups.
 
 .. image:: ../images/dg-appservers_list-1.png
    :alt: View Data Groups
 
--  Click on the **appserver_list** data group to view the list of server subnets/addresses. Traffic from these source IPs will be directed to the **appserver_explicit** topology. Note that IP address **10.1.10.50** is the **Ubuntu18.04 Client** machine (representing an application server).
+2.  Click on the **appserver_list** data group to view the list of server subnets/addresses. Traffic from these source IPs will be directed to the **appserver_explicit** topology. Note that IP address **10.1.10.50** is the **Ubuntu18.04 Client** machine (representing an application server).
 
 .. image:: ../images/dg-appservers_list-2.png
    :alt: Data Group: appservers_list
 
--  Navigate to  **Local Traffic > iRules > iRules List** and review the two iRules.
+3.  Navigate to  **Local Traffic > iRules > iRules List** and review the two iRules.
 
 .. image:: ../images/internal-layered-irules-1.png
    :alt: Internal Layered Architecture iRules
@@ -36,7 +36,7 @@ The SSLOLIBEXP iRule contains functions that allow the topology steering rule to
 
 The topology steering iRule contains your steering logic and defines the topology steering conditions.
 
--  Modify the **SSLO-layering-explicit** iRule with the following values:
+4.  Modify the **SSLO-layering-explicit** iRule with the following values:
 
    -  **Line 21:** Replace ``interceptexp`` with ``f5labs_explicit`` (name of the original/existing L3 Explicit Topology). This defines the default SSL Orchestrator topology to use (if there is no other match).
    -  Insert 2 blank lines after **line 41**.
@@ -51,13 +51,13 @@ The topology steering iRule contains your steering logic and defines the topolog
 .. image:: ../images/irule-layering-explicit.png
    :alt: Changes to SSLO-Topology-Director iRule
 
--  Click on the **Update** button to save the iRule changes.
+5.  Click on the **Update** button to save the iRule changes.
 
 |
 
--  Navigate to **Local Traffic > Virtual Servers > Virtual Server List** to create the topology steering virtual server.
+6.  Navigate to **Local Traffic > Virtual Servers > Virtual Server List** to create the topology steering virtual server.
 
--  Click on the **Create** button to add a new Virtual Server and configure the following settings:
+7.  Click on the **Create** button to add a new Virtual Server and configure the following settings:
 
    -  **Name:** Enter ``Topology-Director_vs``
    -  **Type:** Leave the default - **Standard**
@@ -94,4 +94,4 @@ The topology steering iRule contains your steering logic and defines the topolog
 .. image:: ../images/topology-director-vs-1d.png
    :alt: 
 
-- Click on **Finished** to create the new virtual server.
+8. Click on **Finished** to create the new virtual server.

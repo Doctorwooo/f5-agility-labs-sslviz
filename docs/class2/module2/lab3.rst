@@ -13,39 +13,39 @@ You will need to add an L3 Explicit topology for the outbound application server
 L3 Explicit Topology
 ------------------------
 
--  Navigate to **SSL Orchestrator > Configuration** and **Add** a new topology.
+1.  Navigate to **SSL Orchestrator > Configuration** and **Add** a new topology.
 
--  Scroll to the bottom of the Configuration introduction page and click on the **Next** button.
+2.  Scroll to the bottom of the Configuration introduction page and click on the **Next** button.
 
--  Enter ``appsvr_explicit`` as the topology name. Ensure that the name is entered exactly as shown because it will be referenced in a later step.
+3.  Enter ``appsvr_explicit`` as the topology name. Ensure that the name is entered exactly as shown because it will be referenced in a later step.
 
--  Select the **L3 Explicit Proxy** topology type.
+4.  Select the **L3 Explicit Proxy** topology type.
 
 .. image:: ../images/l3-explicit-topology.png
    :alt: L3 Explicit Proxy
 
 
--  Click the **Save & Next** button to continue.
+5.  Click the **Save & Next** button to continue.
 
 
 SSL Configurations
 -------------------
 
--  In the **CA Certificate Key Chain** section, click on the pencil icon to edit.
+6.  In the **CA Certificate Key Chain** section, click on the pencil icon to edit.
 
--  Select **subrsa.f5labs.com** for both **Certificate** and **Key**.
+7.  Select **subrsa.f5labs.com** for both **Certificate** and **Key**.
 
 .. warning:: 
    Ensure that you are editing the **CA Certificate Key Chain** shown above, not the *Certificate Key Chain*.  They look very similar.
 
--  Click **Done**. The **SSL** settings have now been configured.
+8.  Click **Done**. The **SSL** settings have now been configured.
 
 .. image:: ../images/clientssl.png
    :align: left
 
 |
 
--  Click the **Save & Next** button to continue.
+9.  Click the **Save & Next** button to continue.
 
 Authentication List
 --------------------
@@ -59,21 +59,21 @@ This section allows you to add Online Certificate Status Protocol (OCSP) Respond
 ICAP service
 ---------------
 
--  On the **Services List** screen, click the **Add Service** button.
+10.  On the **Services List** screen, click the **Add Service** button.
 
--  Click  **ICAP** under the **Service Settings** heading
+11.  Click  **ICAP** under the **Service Settings** heading
 
 .. image:: ../images/ICAP-Heading.png
    :align: left
 
--  Select **Generic ICAP Service** and click the **Add** button
+12.  Select **Generic ICAP Service** and click the **Add** button
 
 .. image:: ../images/service-icap-1.png
    :alt: ICAP Service
    :align: left
 
 
--  On the **Service Properties** screen, enter the following values:
+13.  On the **Service Properties** screen, enter the following values:
 
    -  Enter ``CLAM_AV`` in the **Name** field.
 
@@ -108,7 +108,7 @@ ICAP service
    :alt: Services List After Adding ICAP
    :align: left
 
--  Click the **Save & Next** button to continue.
+14.  Click the **Save & Next** button to continue.
 
 
 Service Chain
@@ -116,9 +116,9 @@ Service Chain
 
 You now need to create a new Service Chain containing the CLAM_AV and Cisco Firepower TAP services.
 
--  On the **Services Chain List** screen, click the **Add** button.
+15.  On the **Services Chain List** screen, click the **Add** button.
 
--  On the **Services Chain Properties** screen, enter the following values:
+16.  On the **Services Chain Properties** screen, enter the following values:
 
    -  Enter ``CAV_CiscoFP`` in the **Name** field.
 
@@ -130,9 +130,9 @@ You now need to create a new Service Chain containing the CLAM_AV and Cisco Fire
       :alt: New service chain for Clam AV and Cisco Firepower TAP
       :align: left
 
--  Click the **Save** button to return to the **Service Chain List**.
+17.  Click the **Save** button to return to the **Service Chain List**.
 
--  Click the **Save & Next** button to continue.
+18.  Click the **Save & Next** button to continue.
 
 
 Security Policy
@@ -140,32 +140,32 @@ Security Policy
 
 You now need to create a new Security Policy for the **appsvr_explicit** topology.
 
--  On the **Security Policy** screen, modify the **All Traffic** rule by clicking on the pencil icon.
+19.  On the **Security Policy** screen, modify the **All Traffic** rule by clicking on the pencil icon.
 
--  Select the **ssloSC\_SC\_CAV\_CiscoFP** Service Chain.
+20.  Select the **ssloSC\_SC\_CAV\_CiscoFP** Service Chain.
 
--  Click the **OK** button.
+21.  Click the **OK** button.
 
 .. image:: ../images/internal-layered-policy.png
    :alt: New security policy for application server traffic
    :align: left
 
--  Click the **Save & Next** button to continue.
+22.  Click the **Save & Next** button to continue.
 
 
 Interception Rule / Proxy Server Settings
 -------------------------------------------
 
--  Skip down to the **Proxy Server Settings** section.
+23.  Skip down to the **Proxy Server Settings** section.
 
--  Enter ``10.1.10.175`` in the  **IPV4 Address** field.
+24.  Enter ``10.1.10.175`` in the  **IPV4 Address** field.
 
    .. note::
       An IP address is required for an explicit proxy configuration, but it won't actually be referenced in this design since it is associated with an empty VLAN.
 
--  Leave the **Port** set to ``3128`` (default value).
+25.  Leave the **Port** set to ``3128`` (default value).
 
--  In the **VLANs** section, select the **/Common/zzz-vlan** VLAN and and move it to Selected column.
+26.  In the **VLANs** section, select the **/Common/zzz-vlan** VLAN and and move it to Selected column.
 
 
 .. image:: ../images/internal-layered-interception.png
@@ -173,24 +173,24 @@ Interception Rule / Proxy Server Settings
    :align: left
 
 
--  Click the **Save & Next** button.
+27.  Click the **Save & Next** button.
 
 Egress Settings
 -----------------
 
--  On the Egress Settings screen, select **Auto Map** in the **Manage SNAT Settings** field.
+28.  On the Egress Settings screen, select **Auto Map** in the **Manage SNAT Settings** field.
 
 .. image:: ../images/internal-layered-egress.png
    :alt: 
    :align: left
 
 
--  Click the **Save & Next** button.
+29.  Click the **Save & Next** button.
 
 Log Settings
 --------------
 
--  On the Log Settings screen, leave all the default values.
+30.  On the Log Settings screen, leave all the default values.
 
 .. image:: ../images/internal-layered-log.png
    :alt: 
@@ -208,9 +208,9 @@ Summary
    :align: left
 
 
--  Click the **Deploy** button.
+31.  Click the **Deploy** button.
 
--  When successfully deployed, click the **OK** button to return to the SSL Orchestrator Configuration screen.
+32.  When successfully deployed, click the **OK** button to return to the SSL Orchestrator Configuration screen.
 
 
 
